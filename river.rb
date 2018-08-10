@@ -34,6 +34,10 @@ seine = River.new("The Seine")
 yangtze = River.new("The Yangtze")
 euphrates = River.new("The Euphrates")
 
+amazon.discharge=(1000)
+yangtze.discharge=(2030)
+euphrates.discharge=(20394390)
+
 amazon.flood
 yangtze.flood
 euphrates.dry_up

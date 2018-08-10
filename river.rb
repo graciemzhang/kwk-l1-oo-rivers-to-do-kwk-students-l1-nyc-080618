@@ -17,6 +17,14 @@ class River
     @length = new_length
   end
   
+  def length
+    return @length
+  end
+  
+  def country
+    return @country
+  end
+  
   def country=(new_country)
     @country = new_country
   end

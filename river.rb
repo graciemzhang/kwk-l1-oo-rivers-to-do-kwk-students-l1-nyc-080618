@@ -5,6 +5,10 @@ class River
     @name = name
   end
   
+  def name=(new_name)
+    @name = new_name
+  end
+  
   def length=(new_length)
     @length = new_length
   end

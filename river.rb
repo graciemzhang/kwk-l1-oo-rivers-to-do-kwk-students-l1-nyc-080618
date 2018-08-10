@@ -1,1 +1,39 @@
 # river.rb
+
+class River 
+  def initialize(name)
+    @name = name
+  end
+  
+  def length=(new_length)
+    @length = new_length
+  end
+  
+  def country=(new_country)
+    @country = new_country
+  end
+  
+  def discharge=(new_discharge)
+    @discharge = new_discharge
+  end
+  
+  def flood 
+    @discharge = @discharge * 0.3 + @discharge
+  end
+  
+  def dry_up
+    @discharge = @discharge - @discharge * 0.5 
+  end
+  
+end
+
+nile = River.new("The Nile")
+miss = River.new("The Mississippi")
+amazon = River.new("The Amazon")
+seine = River.new("The Seine")
+yangtze = River.new("The Yangtze")
+euphrates = River.new("The Euphrates")
+
+amazon.flood
+yangtze.flood
+euphrates.dry_up

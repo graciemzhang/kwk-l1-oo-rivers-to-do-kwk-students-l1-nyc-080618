@@ -21,12 +21,12 @@ class River
     return @length
   end
   
-  def country
-    return @country
+  def countries
+    return @countries
   end
   
-  def country=(new_country)
-    @country = new_country
+  def countries=(new_country)
+    @countries = new_country
   end
   
   def discharge=(new_discharge)
